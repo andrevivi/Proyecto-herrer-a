@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herrería Ares</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #100962;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .logo-img {
+        width: 300px;
+        height: 300px;
+    }
+    nav {
+        background-color: #03891eda;
+        padding: 10px;
+        text-align:center;
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+    section {
+        padding: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+    .carousel-img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .carousel-img-fixed {
+        height: 300px;
+        object-fit: cover;
+    }
+    footer {
+        background-color: #5942ed84;
+        color: white;
+        text-align: center;
+        padding:10px;
+        /*position: fixed;
+        bottom: 0;
+        width: 100%;
+        */
+    }
+</style>
+</head>
+
+<body>
+<header>
+    <img src="images/logo.png" alt="Logo de Herrería Ares" class="logo-img">
+    <p>Diseños personalizados en hierro </p>
+</header>
+<nav>
+    <a href="#about">Sobre Nosotros</a>
+    <a href="#services">Servicios</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+</nav>
+<section id="about" class="container-fluid p-0 m-0">
+   
+      <div id="aboutCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diseño de reja"></button>
+            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Exhibidor"></button>
+                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Pérgola"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/20151023_181842.jpg" class="d-block w-100 carousel-img" alt="Diseño de reja">
+                <div class="carousel-caption d-none d-md-block">
+                     <h2 class="text-dark">Sobre Nosotros</h2>
+    <p class="text-dark">En Herrería Ares nos especializamos en la creación de diseños personalizados en hierro. Con más de 30 años de experiencia, ofrecemos productos de alta calidad y un servicio excepcional.</p>
+                </div>
+            </div>    
+                   
+            <div class="carousel-item">
+                <img src="images/20211207_130536.jpg" class="d-block w-100 carousel-img" alt="Exhibidor">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5>Exhibidor</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/20190928_111232.jpg" class="d-block w-100 carousel-img-fixed" alt="Pérgola">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5>Pérgola</h5>
+                </div>
+                
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <div class="conteiner-fluid py-4">
+        
+
+    </div>
+</section>
+    
+</section>
+<section id="services">
+    <h2>Servicios</h2>
+    <ul>
+        <li>Diseño y fabricación de rejas</li>
+        <li>Muebles industriales</li>
+        <li>Pérgolas</li>
+        <li>Artículos decorativos en hierro</li>
+        <li>Portones</li>
+        <li>Puertas y ventanas</li>
+        <li>Barandas y pasamanos</li>
+        <li>Escaleras</li>
+        <li>Reparaciones y mantenimiento de estructuras de hierro</li>
+        <li>Asesoramiento personalizado</li>
+    </ul>
+</section>
+<section id="gallery">
+    <h2>Galería</h2>
+    <div class="gallery">
+        <img src="images/20250519_145352~2.jpg" alt="Reja de hierro">
+        <img src="images/20191110_162937 (1).jpg" alt="Reja de hierro">
+        <img src="images/20191110_161649 (1).jpg" alt="Reja de hierro">
+        <img src="images/IMG-20211121-WA0010.jpeg" alt="Exhibidor">
+        <img src="images/20190131_163840.jpg" alt="Parrilla ">
+        <img src="images/20220207_172854.jpg" alt="Parrilla ">
+    </div>
+</section>
+<section id="contact">
+    <h2>Contacto</h2>
+    <p>Teléfonos:1162926025/1161030415</p>
+    <p>Email:serares72@gmail.com</p>
+    <form id="contactForm">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="respuesta"></div>
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const response = await fetch("http://localhost:3000/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            })
+        });
+        alert(await response.text());
+    });
+</script>
+</section>
+<footer>
+    <p>&copy; 2023 Herrería Ares. Todos los derechos reservados.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>    
