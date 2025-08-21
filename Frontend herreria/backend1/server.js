@@ -12,15 +12,19 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'serares72@gmail.com',      // Cambia por tu email
-        pass: ''       // Usa una contraseña de aplicación
+        pass: 'ndoq rkek nnoh heiy'       // Usa una contraseña de aplicación
     }
 });
 
+app.get('/',(req, res) => {
+    res.send('servidor funcionando');
+});
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
 
+
     const mailOptions = {
-        from: email,
+        from: 'serares72@gmail.com',
         to: 'serares72@gmail.com', // Tu correo donde recibes los mensajes
         subject: 'Nuevo mensaje de contacto',
         text: `Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`

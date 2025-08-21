@@ -160,7 +160,7 @@
     <h2>Contacto</h2>
     <p>Teléfonos:1162926025/1161030415</p>
     <p>Email:serares72@gmail.com</p>
-    <form id="contactForm" class="p-4 rounded shadow bg-white contact-form">
+    <form id="contactForm" class="p-4 rounded shadow bg-white contact-form mx-auto" >
         <div class="mb-3">
         <label for="name"class="form-label">Nombre:</label>
         <input type="text" id="name" name="name"class="form-control"required>
@@ -179,7 +179,7 @@
     <script>
     document.getElementById("contactForm").addEventListener("submit", async function(event) {
         event.preventDefault();
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("http://localhost:3000/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -188,7 +188,7 @@
                 message: document.getElementById("message").value
             })
         });
-        alert(await response.text());
+        document.getElementById("respuesta").innerText= await response.text();
     });
 </script>
 </section>

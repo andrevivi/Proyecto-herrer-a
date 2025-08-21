@@ -87,6 +87,10 @@ footer {
   .carousel-caption h2, .carousel-caption p {
     font-size: 1rem;
     padding: 0.5rem;
+    
+    .contact-form{
+        max-width: 400px;
+    }
   }
 }
    
